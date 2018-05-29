@@ -51,15 +51,15 @@ for rows_number, rows in enumerate(days1):
            if dates_list[i] == time:
                if pp_array[i] < 30 and pp_array[i] >=0:
                    color_array[rows_number][time_index] = 1
-                   textinfo[rows_number][time_index] ='Persistence Score: '+str(pp_array[i])
+                   textinfo[rows_number][time_index] ='Grade: '+str(pp_array[i])
                    break
                if pp_array[i] < 60 and pp_array[i] >=30:
                    color_array[rows_number][time_index] = 2
-                   textinfo[rows_number][time_index]= 'Persistence Score:'+str(pp_array[i])
+                   textinfo[rows_number][time_index]= 'Grade:'+str(pp_array[i])
                    break
                if pp_array[i] >=60:
                    color_array[rows_number][time_index] = 3
-                   textinfo[rows_number][time_index] = 'Persistence Score: '+str(pp_array[i])
+                   textinfo[rows_number][time_index] = 'Grade: '+str(pp_array[i])
                    break
        else:
            color_array[rows_number][time_index] =0
