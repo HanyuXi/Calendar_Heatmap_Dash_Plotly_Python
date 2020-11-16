@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import numpy as np
-import plotly.plotly as py
+import plotly as py
 import plotly.graph_objs as go
 import plotly.figure_factory as ff
 import dash
@@ -98,7 +98,7 @@ layout2 = go.Layout(
 )
 
 ##Plot the table in dash-plotly
-fig = dict(data=pt, layout=layout2)
+fig = go.Figure(data=pt, layout=layout2)
 app.layout = html.Div([dcc.Graph(id = 'my-graph', figure = fig)], style = {'width': '50%', 'display': 'inline-block'})
 
 
